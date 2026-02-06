@@ -3,7 +3,7 @@ import type { SVGProps } from "react";
 export function Logo({ className, ...props }: SVGProps<SVGSVGElement>) {
   return (
     <svg
-      viewBox="0 0 220 48"
+      viewBox="0 0 52 48"
       className={className}
       aria-label="Vanillammer"
       role="img"
@@ -17,16 +17,6 @@ export function Logo({ className, ...props }: SVGProps<SVGSVGElement>) {
         <path d="M6 36h40" />
         <path d="M6 36l10-10 8 8 12-12 10 10" />
       </g>
-      <text
-        x="62"
-        y="32"
-        fill="currentColor"
-        fontFamily="Cormorant, serif"
-        fontSize="28"
-        letterSpacing="1"
-      >
-        Vanillammer
-      </text>
     </svg>
   );
 }

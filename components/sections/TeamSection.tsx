@@ -15,53 +15,31 @@ export function TeamSection() {
     <section className="mx-auto max-w-6xl px-6 pb-20 reveal">
       <SectionHeading title={t("about.team.title")} />
       <div className="mt-8 grid gap-6 md:grid-cols-2">
-        {members.map((member, index) => (
+        {members.map((member) => (
           <Card
             key={member.name}
-            className="border-border/80 bg-white/80 p-6 transition-all hover:-translate-y-1 hover:border-gold-200 hover:shadow-lg"
+            className="cursor-pointer border-border/80 bg-white/80 p-6 transition-all hover:-translate-y-1 hover:border-gold-200 hover:shadow-lg"
           >
             <div className="flex h-36 items-center justify-center rounded-md bg-gradient-to-br from-cream-50 to-stone-200">
-              {index % 2 === 0 ? (
-                <svg
-                  viewBox="0 0 64 64"
-                  className="h-20 w-20 text-gold-500"
-                  aria-hidden="true"
-                >
-                  <circle cx="32" cy="20" r="10" fill="currentColor" />
-                  <path
-                    d="M16 54c0-8.8 7.2-16 16-16s16 7.2 16 16"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="3"
-                  />
-                  <path
-                    d="M24 34h16"
-                    stroke="currentColor"
-                    strokeWidth="3"
-                    strokeLinecap="round"
-                  />
-                </svg>
-              ) : (
-                <svg
-                  viewBox="0 0 64 64"
-                  className="h-20 w-20 text-gold-500"
-                  aria-hidden="true"
-                >
-                  <circle cx="32" cy="18" r="9" fill="currentColor" />
-                  <path
-                    d="M20 54c0-7.7 5.6-14 12-14s12 6.3 12 14"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="3"
-                  />
-                  <path
-                    d="M24 36c5 4 11 4 16 0"
-                    stroke="currentColor"
-                    strokeWidth="3"
-                    strokeLinecap="round"
-                  />
-                </svg>
-              )}
+              <svg
+                viewBox="0 0 64 64"
+                className="h-20 w-20 text-gold-500"
+                aria-hidden="true"
+              >
+                <circle cx="32" cy="20" r="10" fill="currentColor" />
+                <path
+                  d="M16 54c0-8.8 7.2-16 16-16s16 7.2 16 16"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="3"
+                />
+                <path
+                  d="M24 34h16"
+                  stroke="currentColor"
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                />
+              </svg>
             </div>
             <h3 className="mt-4 text-lg font-semibold text-charcoal-900">
               {member.name}

@@ -1,7 +1,11 @@
 <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="64" height="64" rx="12" fill="#C7A86A"/>
-  <path d="M16 44L32 28L26 22L10 38L16 44Z" stroke="#1C1B19" stroke-width="2"/>
-  <path d="M34 20H50L52 26L48 30H32L30 26L34 20Z" stroke="#1C1B19" stroke-width="2"/>
-  <path d="M12 48H52" stroke="#1C1B19" stroke-width="2"/>
-  <path d="M12 48L24 36L32 44L44 32L52 40" stroke="#1C1B19" stroke-width="2"/>
+  <rect width="64" height="64" rx="12" fill="#FBF2D6"/>
+  <g fill="none" stroke="#E7B51F" stroke-width="2">
+    <path d="M18 44L30 32L24 26L12 38L18 44Z"/>
+    <path d="M32 24H46L48 30L44 34H30L28 30L32 24Z"/>
+    <path d="M16 40L12 44"/>
+    <path d="M44 22L50 28"/>
+    <path d="M10 46H54"/>
+    <path d="M10 46L22 34L30 42L42 30L54 40"/>
+  </g>
 </svg>

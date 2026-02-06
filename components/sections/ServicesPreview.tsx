@@ -36,12 +36,12 @@ export function ServicesPreview() {
           return (
             <Card
               key={service.id}
-              className="cursor-pointer border-border/80 bg-white/80 p-6 shadow-sm hover-lift hover-gold hover-glow"
+              className="group card-lux cursor-pointer border-border/80 p-6 hover-lift hover-gold hover-glow"
             >
               <div className="flex h-12 w-12 items-center justify-center rounded-md border border-gold-200 bg-cream-50 text-gold-500">
                 {Icon ? <Icon className="h-6 w-6" /> : null}
               </div>
-              <h3 className="mt-6 text-xl font-semibold text-charcoal-900">
+              <h3 className="mt-6 text-xl font-semibold text-charcoal-900 group-hover:text-gold-500 transition-colors">
                 {service.title}
               </h3>
               <p className="mt-3 text-sm text-muted-foreground">

@@ -18,7 +18,7 @@ export function TeamSection() {
         {members.map((member) => (
           <Card
             key={member.name}
-            className="cursor-pointer border-border/80 bg-white/80 p-6 transition-all hover:-translate-y-1 hover:border-gold-200 hover:shadow-lg"
+            className="group card-lux cursor-pointer border-border/80 p-6 hover-lift hover-gold"
           >
             <div className="flex h-36 items-center justify-center rounded-md bg-gradient-to-br from-cream-50 to-stone-200">
               <svg
@@ -41,7 +41,7 @@ export function TeamSection() {
                 />
               </svg>
             </div>
-            <h3 className="mt-4 text-lg font-semibold text-charcoal-900">
+            <h3 className="mt-4 text-lg font-semibold text-charcoal-900 transition-colors group-hover:text-gold-500">
               {member.name}
             </h3>
             <p className="text-sm text-muted-foreground">{member.role}</p>

@@ -40,31 +40,31 @@
 
 :root {
   --radius: 4px;
-  --background: #faf7f0;
-  --foreground: #1c1b19;
+  --background: #f8f1e6;
+  --foreground:  #1c1b19;
   --card: #ffffff;
-  --card-foreground: #1c1b19;
+  --card-foreground: #7b6a59;
   --popover: #ffffff;
-  --popover-foreground: #1c1b19;
-  --primary: #e0b94c;
-  --primary-foreground: #1a1714;
-  --secondary: #f6ecd0;
-  --secondary-foreground: #2a2622;
-  --muted: #efe2b7;
-  --muted-foreground: #6a625a;
-  --accent: #f9eec9;
-  --accent-foreground: #1f1c18;
+  --popover-foreground: #7b6a59;
+  --primary: #d8b56b;
+  --primary-foreground: #7b6a59;
+  --secondary: #efe4d2;
+  --secondary-foreground: #7b6a59;
+  --muted: #ead9b8;
+  --muted-foreground: #b9a48c;
+  --accent: #efe4d2;
+  --accent-foreground: #7b6a59;
   --destructive: #b34b4b;
-  --border: #e1d2a7;
-  --input: #e1d2a7;
-  --ring: #e0b94c;
+  --border: #d8c7af;
+  --input: #d8c7af;
+  --ring: #d8b56b;
 
   --gold-200: #e8cd61;
   --gold-500: #e7b51f;
-  --cream-50: #fbf2d6;
-  --stone-200: #eadfbe;
-  --stone-400: #b8aa86;
-  --charcoal-900: #1c1b19;
+  --cream-50: #efe4d2;
+  --stone-200: #d8c7af;
+  --stone-400: #b9a48c;
+  --charcoal-900: #7b6a59;
   --bg-shift: 0px;
   --bg-shimmer: 0.35;
 }
@@ -87,8 +87,8 @@
     inset: 0;
     pointer-events: none;
     background-image:
-      radial-gradient(circle at 20% 20%, rgba(224, 185, 76, 0.16), transparent 52%),
-      radial-gradient(circle at 80% 0%, rgba(251, 242, 214, 0.7), transparent 46%),
+      radial-gradient(circle at 20% 20%, rgba(216, 181, 107, 0.18), transparent 52%),
+      radial-gradient(circle at 80% 0%, rgba(248, 241, 230, 0.8), transparent 46%),
       linear-gradient(180deg, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0));
     opacity: 0.7;
     z-index: -1;
@@ -101,8 +101,8 @@
     inset: 0;
     pointer-events: none;
     background-image:
-      radial-gradient(circle at 15% 25%, rgba(231, 181, 31, var(--bg-shimmer)), transparent 35%),
-      radial-gradient(circle at 85% 70%, rgba(232, 205, 97, 0.25), transparent 40%),
+      radial-gradient(circle at 15% 25%, rgba(216, 181, 107, var(--bg-shimmer)), transparent 35%),
+      radial-gradient(circle at 85% 70%, rgba(234, 217, 184, 0.25), transparent 40%),
       repeating-linear-gradient(
         120deg,
         rgba(255, 255, 255, 0.08),
@@ -139,10 +139,10 @@
     text-wrap: balance;
   }
   .bg-glow {
-    background: radial-gradient(circle at top, rgba(231, 181, 31, 0.2), transparent 60%);
+    background: radial-gradient(circle at top, rgba(216, 181, 107, 0.22), transparent 60%);
   }
   .gold-divider {
-    background: linear-gradient(90deg, transparent, rgba(231, 181, 31, 0.6), transparent);
+    background: linear-gradient(90deg, transparent, rgba(216, 181, 107, 0.65), transparent);
   }
   .hover-lift {
     cursor: pointer;

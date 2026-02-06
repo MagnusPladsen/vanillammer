@@ -22,7 +22,7 @@ export function CTASection() {
               {t("home.cta.subtitle")}
             </p>
           </div>
-          <Button asChild className="bg-gold-500 text-charcoal-900 hover:bg-gold-200">
+          <Button asChild className="bg-gold-500 text-charcoal-900 hover:bg-gold-200 shadow-[0_12px_30px_rgba(255,232,2,0.25)]">
             <Link href={`/${locale}/contact`}>{t("cta.quote")}</Link>
           </Button>
         </div>

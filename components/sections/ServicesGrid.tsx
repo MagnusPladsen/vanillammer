@@ -29,7 +29,7 @@ export function ServicesGrid() {
               className="border-border/80 bg-white/80 p-6 transition-all hover:-translate-y-1 hover:border-gold-200 hover:shadow-lg"
             >
               <div className="flex items-center gap-4">
-                <div className="flex h-12 w-12 items-center justify-center rounded-md border border-border text-gold-500">
+                <div className="flex h-12 w-12 items-center justify-center rounded-md border border-gold-200 bg-cream-50 text-gold-500">
                   {Icon ? <Icon className="h-6 w-6" /> : null}
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal-900">

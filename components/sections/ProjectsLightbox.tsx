@@ -41,7 +41,7 @@ export function ProjectsLightbox({ open, image, onClose, closeLabel }: ProjectsL
       onClick={onClose}
     >
       <div
-        className="relative w-full max-w-4xl overflow-hidden rounded-lg bg-cream-50 shadow-2xl"
+        className="relative w-full max-w-4xl overflow-hidden rounded-lg bg-cream-50 shadow-2xl ring-1 ring-gold-200/70"
         onClick={(event) => event.stopPropagation()}
       >
         <div className="relative h-[420px] w-full">

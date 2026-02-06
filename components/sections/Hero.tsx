@@ -34,7 +34,7 @@ export function Hero() {
           {t("home.hero.subtitle")}
         </p>
         <div className="flex flex-wrap items-center gap-4 reveal reveal-delay-4">
-          <Button asChild className="bg-gold-500 text-charcoal-900 hover:bg-gold-200">
+          <Button asChild className="bg-gold-500 text-charcoal-900 hover:bg-gold-200 shadow-[0_12px_30px_rgba(255,232,2,0.3)]">
             <Link href={`/${locale}/contact`}>{t("cta.quote")}</Link>
           </Button>
           <Button

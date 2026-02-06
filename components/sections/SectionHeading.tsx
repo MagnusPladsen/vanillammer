@@ -21,6 +21,7 @@ export function SectionHeading({ eyebrow, title, subtitle, className }: SectionH
           {subtitle}
         </p>
       ) : null}
+      <div className="h-[2px] w-16 bg-gold-500/80" />
     </div>
   );
 }

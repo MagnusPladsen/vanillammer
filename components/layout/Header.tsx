@@ -36,7 +36,7 @@ export function Header() {
               key={item}
               href={item === "home" ? `/${locale}` : `/${locale}/${item}`}
               className={cn(
-                "transition-colors hover:text-gold-500",
+                "transition-colors hover:text-gold-500 hover:underline hover:underline-offset-8",
                 pathname === `/${locale}/${item}` ||
                   (item === "home" && pathname === `/${locale}`)
                   ? "text-gold-500"

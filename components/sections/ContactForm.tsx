@@ -20,7 +20,7 @@ export function ContactForm() {
         subtitle={t("contact.subtitle")}
       />
       <div className="mt-10 grid gap-8 md:grid-cols-[1.2fr_0.8fr]">
-        <Card className="border-border/80 bg-white/80 p-6">
+        <Card className="border-border/80 bg-white/80 p-6 transition-all hover:border-gold-200 hover:shadow-lg">
           {submitted ? (
             <div className="rounded-md border border-gold-200 bg-cream-50 p-6 text-sm text-charcoal-900">
               {t("contact.form.success")}
@@ -72,7 +72,7 @@ export function ContactForm() {
           )}
         </Card>
         <div className="space-y-6">
-          <Card className="border-border/80 bg-white/80 p-6">
+          <Card className="border-border/80 bg-white/80 p-6 transition-all hover:border-gold-200 hover:shadow-lg">
             <h3 className="text-lg font-semibold text-charcoal-900">
               {t("contact.details.title")}
             </h3>

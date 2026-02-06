@@ -40,7 +40,7 @@ export function Hero() {
           <Button
             asChild
             variant="outline"
-            className="border-cream-50/50 text-cream-50 hover:bg-cream-50/10"
+            className="border-gold-200/80 bg-cream-50/95 text-charcoal-900 hover:bg-cream-50"
           >
             <Link href={`/${locale}/projects`}>{t("cta.viewProjects")}</Link>
           </Button>

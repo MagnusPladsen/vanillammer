@@ -43,7 +43,7 @@ export function ProjectsGrid() {
           return (
             <Card
               key={project.id}
-              className="group cursor-pointer overflow-hidden border-border/80 bg-white/80 transition-all hover:-translate-y-1 hover:shadow-lg"
+              className="group cursor-pointer overflow-hidden border-border/80 bg-white/80 transition-all hover:-translate-y-1 hover:border-gold-200 hover:shadow-lg"
               onClick={() => setActiveId(project.id)}
               role="button"
               aria-label={project.title}

@@ -37,7 +37,7 @@ export function ProjectsPreview() {
           return (
             <Card
               key={project.id}
-              className="group overflow-hidden border-border/80 bg-white/80 transition-all hover:-translate-y-1 hover:shadow-lg"
+              className="group overflow-hidden border-border/80 bg-white/80 transition-all hover:-translate-y-1 hover:border-gold-200 hover:shadow-lg"
             >
               <div className="relative h-48 w-full">
                 {image ? (

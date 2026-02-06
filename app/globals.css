@@ -46,7 +46,7 @@
   --card-foreground: #1c1b19;
   --popover: #ffffff;
   --popover-foreground: #1c1b19;
-  --primary: #c7a86a;
+  --primary: #d5a83a;
   --primary-foreground: #1a1714;
   --secondary: #f1ece4;
   --secondary-foreground: #2a2622;
@@ -57,10 +57,10 @@
   --destructive: #b34b4b;
   --border: #e3ddd3;
   --input: #e3ddd3;
-  --ring: #c7a86a;
+  --ring: #d5a83a;
 
-  --gold-200: #e5d2a6;
-  --gold-500: #c7a86a;
+  --gold-200: #f0d28b;
+  --gold-500: #d5a83a;
   --cream-50: #f9f6f0;
   --stone-200: #e6dfd6;
   --stone-400: #b7ada1;

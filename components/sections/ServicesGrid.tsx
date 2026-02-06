@@ -26,7 +26,7 @@ export function ServicesGrid() {
           return (
             <Card
               key={service.id}
-              className="border-border/80 bg-white/80 p-6 transition-all hover:-translate-y-1 hover:shadow-lg"
+              className="border-border/80 bg-white/80 p-6 transition-all hover:-translate-y-1 hover:border-gold-200 hover:shadow-lg"
             >
               <div className="flex items-center gap-4">
                 <div className="flex h-12 w-12 items-center justify-center rounded-md border border-border text-gold-500">

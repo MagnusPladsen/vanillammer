@@ -16,7 +16,10 @@ export function TeamSection() {
       <SectionHeading title={t("about.team.title")} />
       <div className="mt-8 grid gap-6 md:grid-cols-3">
         {members.map((member) => (
-          <Card key={member.name} className="border-border/80 bg-white/80 p-6">
+          <Card
+            key={member.name}
+            className="border-border/80 bg-white/80 p-6 transition-all hover:-translate-y-1 hover:border-gold-200 hover:shadow-lg"
+          >
             <div className="h-36 rounded-md bg-gradient-to-br from-cream-50 to-stone-200" />
             <h3 className="mt-4 text-lg font-semibold text-charcoal-900">
               {member.name}

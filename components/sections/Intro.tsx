@@ -16,7 +16,7 @@ export function Intro() {
             {t("home.intro")}
           </p>
         </div>
-        <div className="rounded-lg border border-border bg-white/70 p-6 text-sm text-muted-foreground hover:border-gold-200 transition-colors">
+        <div className="card-lux card-static rounded-lg border border-border p-6 text-sm text-muted-foreground">
           <p className="font-semibold uppercase tracking-[0.2em] text-charcoal-900">
             {t("contact.details.location")}
           </p>

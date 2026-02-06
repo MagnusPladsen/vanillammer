@@ -58,7 +58,7 @@ export function Header() {
 
         <div className="hidden items-center gap-4 md:flex">
           <LanguageSwitcher />
-          <Button asChild className="bg-gold-500 text-charcoal-900 hover:bg-gold-200">
+          <Button asChild className="btn-gold">
             <Link href={`/${locale}/contact`}>{t("cta.quote")}</Link>
           </Button>
         </div>
@@ -92,7 +92,7 @@ export function Header() {
                   </Link>
                 ))}
               </div>
-              <Button asChild className="mt-8 w-full bg-gold-500 text-charcoal-900 hover:bg-gold-200">
+              <Button asChild className="mt-8 w-full btn-gold">
                 <Link href={`/${locale}/contact`}>{t("cta.quote")}</Link>
               </Button>
             </SheetContent>

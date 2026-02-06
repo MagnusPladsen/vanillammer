@@ -139,10 +139,10 @@
     text-wrap: balance;
   }
   .bg-glow {
-    background: radial-gradient(circle at top, rgba(216, 181, 107, 0.22), transparent 60%);
+    background: radial-gradient(circle at top, rgba(231, 181, 31, 0.22), transparent 60%);
   }
   .gold-divider {
-    background: linear-gradient(90deg, transparent, rgba(216, 181, 107, 0.65), transparent);
+    background: linear-gradient(90deg, transparent, rgba(231, 181, 31, 0.65), transparent);
   }
   .hover-lift {
     cursor: pointer;
@@ -155,8 +155,11 @@
   .hover-gold:hover {
     border-color: var(--gold-200);
   }
+  .hover-gold-text:hover {
+    color: var(--gold-500);
+  }
   .hover-glow:hover {
-    box-shadow: 0 18px 42px rgba(224, 185, 76, 0.18);
+    box-shadow: 0 18px 42px rgba(231, 181, 31, 0.18);
   }
   .reveal {
     opacity: 0;
@@ -174,6 +177,115 @@
   }
   .reveal-delay-4 {
     animation-delay: 0.4s;
+  }
+  .card-lux {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(255, 255, 255, 0.86));
+    box-shadow: 0 12px 24px rgba(28, 27, 25, 0.05);
+  }
+  .card-lux::before,
+  .card-lux::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    border-radius: inherit;
+  }
+  .card-lux::before {
+    background:
+      linear-gradient(90deg, rgba(231, 181, 31, 0.85), rgba(231, 181, 31, 0.85)) top left / 0% 2px no-repeat,
+      linear-gradient(90deg, rgba(231, 181, 31, 0.85), rgba(231, 181, 31, 0.85)) bottom right / 0% 2px no-repeat,
+      linear-gradient(0deg, rgba(231, 181, 31, 0.85), rgba(231, 181, 31, 0.85)) top right / 2px 0% no-repeat,
+      linear-gradient(0deg, rgba(231, 181, 31, 0.85), rgba(231, 181, 31, 0.85)) bottom left / 2px 0% no-repeat;
+    transition: background-size 0.55s ease;
+    opacity: 0.9;
+  }
+  .card-lux::after {
+    background: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0) 20%,
+      rgba(231, 181, 31, 0.35) 50%,
+      rgba(255, 255, 255, 0) 80%
+    );
+    transform: translateX(-120%);
+    opacity: 0;
+    transition: transform 0.7s ease, opacity 0.5s ease;
+  }
+  .card-lux:hover {
+    box-shadow: 0 24px 42px rgba(231, 181, 31, 0.14);
+  }
+  .card-lux:hover::before {
+    background-size: 100% 2px, 100% 2px, 2px 100%, 2px 100%;
+  }
+  .card-lux:hover::after {
+    transform: translateX(120%);
+    opacity: 1;
+  }
+  .card-static {
+    cursor: default;
+  }
+  .card-static:hover::before,
+  .card-static:hover::after {
+    background-size: 0% 2px, 0% 2px, 2px 0%, 2px 0%;
+    opacity: 0;
+  }
+  .card-static:hover {
+    box-shadow: 0 12px 24px rgba(28, 27, 25, 0.05);
+  }
+  
+  .btn-gold {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #e7b51f, #f0d17a);
+    color: #1c1b19;
+    box-shadow: 0 14px 30px rgba(231, 181, 31, 0.28);
+  }
+  .btn-gold::after {
+    content: "";
+    position: absolute;
+    inset: -20% 0;
+    background: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0) 20%,
+      rgba(255, 255, 255, 0.5) 50%,
+      rgba(255, 255, 255, 0) 80%
+    );
+    transform: translateX(-130%);
+    transition: transform 0.7s ease;
+  }
+  .btn-gold:hover {
+    filter: brightness(1.02);
+  }
+  .btn-gold:hover::after {
+    transform: translateX(130%);
+  }
+  .btn-gold-outline {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(231, 181, 31, 0.6);
+    background: rgba(255, 255, 255, 0.85);
+    color: #1c1b19;
+    box-shadow: 0 8px 20px rgba(231, 181, 31, 0.12);
+  }
+  .btn-gold-outline::after {
+    content: "";
+    position: absolute;
+    inset: -20% 0;
+    background: linear-gradient(
+      120deg,
+      rgba(231, 181, 31, 0) 20%,
+      rgba(231, 181, 31, 0.25) 50%,
+      rgba(231, 181, 31, 0) 80%
+    );
+    transform: translateX(-130%);
+    transition: transform 0.7s ease;
+  }
+  .btn-gold-outline:hover {
+    background: rgba(255, 255, 255, 0.98);
+  }
+  .btn-gold-outline:hover::after {
+    transform: translateX(130%);
   }
 }
 

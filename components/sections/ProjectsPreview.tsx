@@ -27,7 +27,7 @@ export function ProjectsPreview() {
           title={t("home.projects.title")}
           subtitle={t("home.projects.subtitle")}
         />
-        <Button asChild variant="outline" className="border-border">
+        <Button asChild variant="outline" className="btn-gold-outline">
           <Link href={`/${locale}/projects`}>{t("cta.viewProjects")}</Link>
         </Button>
       </div>

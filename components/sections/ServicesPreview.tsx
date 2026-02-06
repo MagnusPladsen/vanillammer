@@ -26,7 +26,7 @@ export function ServicesPreview() {
           title={t("home.services.title")}
           subtitle={t("home.services.subtitle")}
         />
-        <Button asChild variant="outline" className="border-border">
+        <Button asChild variant="outline" className="btn-gold-outline">
           <Link href={`/${locale}/services`}>{t("cta.viewServices")}</Link>
         </Button>
       </div>
@@ -41,12 +41,10 @@ export function ServicesPreview() {
               <div className="flex h-12 w-12 items-center justify-center rounded-md border border-gold-200 bg-cream-50 text-gold-500">
                 {Icon ? <Icon className="h-6 w-6" /> : null}
               </div>
-              <h3 className="mt-6 text-xl font-semibold text-charcoal-900 group-hover:text-gold-500 transition-colors">
+              <h3 className="mt-6 text-xl font-semibold text-charcoal-900 transition-colors group-hover:text-gold-500">
                 {service.title}
               </h3>
-              <p className="mt-3 text-sm text-muted-foreground">
-                {service.description}
-              </p>
+              <p className="mt-3 text-sm text-muted-foreground">{service.description}</p>
             </Card>
           );
         })}

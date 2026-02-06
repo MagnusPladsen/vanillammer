@@ -28,7 +28,12 @@ export function Footer() {
         </div>
         <div className="space-y-3 text-sm">
           <p className="font-semibold uppercase tracking-[0.2em] text-charcoal-900">{t("nav.contact")}</p>
-          <p>{t("contact.details.email")}</p>
+          <a
+            href={`mailto:${t("contact.details.email")}`}
+            className="text-muted-foreground hover:text-gold-500 transition-colors"
+          >
+            {t("contact.details.email")}
+          </a>
           <p>{t("contact.details.phone")}</p>
           <p>{t("contact.details.location")}</p>
         </div>

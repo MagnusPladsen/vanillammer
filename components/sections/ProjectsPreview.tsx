@@ -37,7 +37,7 @@ export function ProjectsPreview() {
           return (
             <Card
               key={project.id}
-              className="group cursor-pointer overflow-hidden border-border/80 bg-white/80 hover-lift hover-gold hover-glow"
+              className="group card-lux cursor-pointer overflow-hidden border-border/80 hover-lift hover-gold hover-glow"
             >
               <div className="relative h-48 w-full">
                 {image ? (
@@ -50,7 +50,7 @@ export function ProjectsPreview() {
                 ) : null}
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-charcoal-900">
+                <h3 className="text-xl font-semibold text-charcoal-900 transition-colors group-hover:text-gold-500">
                   {project.title}
                 </h3>
                 <p className="mt-2 text-sm text-muted-foreground">

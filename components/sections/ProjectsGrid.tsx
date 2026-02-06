@@ -43,7 +43,7 @@ export function ProjectsGrid() {
           return (
             <Card
               key={project.id}
-              className="group cursor-pointer overflow-hidden border-border/80 bg-white/80 transition-all hover:-translate-y-1 hover:border-gold-200 hover:shadow-lg"
+              className="group card-lux cursor-pointer overflow-hidden border-border/80 hover-lift hover-gold hover-glow"
               onClick={() => setActiveId(project.id)}
               role="button"
               aria-label={project.title}
@@ -59,7 +59,7 @@ export function ProjectsGrid() {
                 ) : null}
               </div>
               <div className="p-6">
-                <h3 className="text-lg font-semibold text-charcoal-900">
+                <h3 className="text-lg font-semibold text-charcoal-900 transition-colors group-hover:text-gold-500">
                   {project.title}
                 </h3>
                 <p className="mt-2 text-sm text-muted-foreground">

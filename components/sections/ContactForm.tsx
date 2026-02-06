@@ -65,7 +65,10 @@ export function ContactForm() {
                   required
                 />
               </div>
-              <Button type="submit" className="bg-charcoal-900 text-cream-50 hover:bg-charcoal-900/90">
+              <Button
+                type="submit"
+                className="cursor-pointer bg-gold-500 text-charcoal-900 hover:bg-gold-200 shadow-[0_14px_30px_rgba(231,181,31,0.25)]"
+              >
                 {t("contact.form.submit")}
               </Button>
             </form>

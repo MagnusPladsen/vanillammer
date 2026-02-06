@@ -26,8 +26,16 @@ export function Header() {
   return (
     <header className="sticky top-0 z-40 w-full border-b border-border/60 bg-cream-50/95 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <Link href={`/${locale}`} className="flex items-center gap-3 text-charcoal-900">
-          <Logo className="h-10 w-auto" />
+        <Link
+          href={`/${locale}`}
+          className="group flex items-center gap-3 text-charcoal-900"
+        >
+          <Logo className="h-10 w-auto text-gold-500 drop-shadow-[0_6px_14px_rgba(231,181,31,0.25)]" />
+          <span className="relative font-serif text-lg tracking-[0.2em] uppercase text-charcoal-900">
+            <span className="relative z-10">Vanillammer</span>
+            <span className="pointer-events-none absolute inset-x-0 -bottom-1 h-[2px] bg-gold-500 opacity-100" />
+            <span className="pointer-events-none absolute -inset-x-3 -inset-y-2 rounded-full bg-gold-200/35 opacity-100 blur-xl" />
+          </span>
         </Link>
 
         <nav className="hidden items-center gap-8 text-sm font-medium uppercase tracking-[0.14em] text-charcoal-900 md:flex">
@@ -36,7 +44,7 @@ export function Header() {
               key={item}
               href={item === "home" ? `/${locale}` : `/${locale}/${item}`}
               className={cn(
-                "transition-colors hover:text-gold-500 hover:underline hover:underline-offset-8",
+                "cursor-pointer transition-colors hover:text-gold-500 hover:underline hover:underline-offset-8",
                 pathname === `/${locale}/${item}` ||
                   (item === "home" && pathname === `/${locale}`)
                   ? "text-gold-500"

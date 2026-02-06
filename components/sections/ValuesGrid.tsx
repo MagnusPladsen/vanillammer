@@ -18,7 +18,7 @@ export function ValuesGrid() {
         {values.map((value, index) => (
           <Card
             key={index}
-            className="border-border/80 bg-white/80 p-6 transition-all hover:-translate-y-1 hover:border-gold-200 hover:shadow-lg"
+            className="cursor-pointer border-border/80 bg-white/80 p-6 transition-all hover:-translate-y-1 hover:border-gold-200 hover:shadow-lg"
           >
             <h3 className="text-lg font-semibold text-charcoal-900">
               {value.title}

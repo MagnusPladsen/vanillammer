@@ -36,7 +36,7 @@ export function ServicesPreview() {
           return (
             <Card
               key={service.id}
-              className="border-border/80 bg-white/80 p-6 shadow-sm transition-all hover:-translate-y-1 hover:border-gold-200 hover:shadow-lg"
+              className="cursor-pointer border-border/80 bg-white/80 p-6 shadow-sm hover-lift hover-gold hover-glow"
             >
               <div className="flex h-12 w-12 items-center justify-center rounded-md border border-gold-200 bg-cream-50 text-gold-500">
                 {Icon ? <Icon className="h-6 w-6" /> : null}

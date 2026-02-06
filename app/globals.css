@@ -40,7 +40,7 @@
 
 :root {
   --radius: 4px;
-  --background: #fbf2d6;
+  --background: #faf7f0;
   --foreground: #1c1b19;
   --card: #ffffff;
   --card-foreground: #1c1b19;
@@ -59,12 +59,14 @@
   --input: #e1d2a7;
   --ring: #e0b94c;
 
-  --gold-200: #f0d17a;
-  --gold-500: #e0b94c;
+  --gold-200: #e8cd61;
+  --gold-500: #e7b51f;
   --cream-50: #fbf2d6;
   --stone-200: #eadfbe;
   --stone-400: #b8aa86;
   --charcoal-900: #1c1b19;
+  --bg-shift: 0px;
+  --bg-shimmer: 0.35;
 }
 
 @layer base {
@@ -85,11 +87,41 @@
     inset: 0;
     pointer-events: none;
     background-image:
-      radial-gradient(circle at 20% 20%, rgba(202, 163, 58, 0.18), transparent 52%),
-      radial-gradient(circle at 80% 0%, rgba(243, 229, 171, 0.35), transparent 46%),
+      radial-gradient(circle at 20% 20%, rgba(224, 185, 76, 0.16), transparent 52%),
+      radial-gradient(circle at 80% 0%, rgba(251, 242, 214, 0.7), transparent 46%),
       linear-gradient(180deg, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0));
     opacity: 0.7;
     z-index: -1;
+    transform: translateY(var(--bg-shift));
+    transition: transform 0.4s ease-out;
+  }
+  body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background-image:
+      radial-gradient(circle at 15% 25%, rgba(231, 181, 31, var(--bg-shimmer)), transparent 35%),
+      radial-gradient(circle at 85% 70%, rgba(232, 205, 97, 0.25), transparent 40%),
+      repeating-linear-gradient(
+        120deg,
+        rgba(255, 255, 255, 0.08),
+        rgba(255, 255, 255, 0.08) 12px,
+        rgba(255, 255, 255, 0) 12px,
+        rgba(255, 255, 255, 0) 36px
+      );
+    mix-blend-mode: multiply;
+    opacity: 0.35;
+    z-index: -2;
+    transform: translateY(calc(var(--bg-shift) * -0.5));
+    transition: transform 0.4s ease-out, opacity 0.4s ease-out;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    body::before,
+    body::after {
+      transform: none;
+      transition: none;
+    }
   }
   h1,
   h2,
@@ -107,10 +139,24 @@
     text-wrap: balance;
   }
   .bg-glow {
-    background: radial-gradient(circle at top, rgba(199, 168, 106, 0.2), transparent 60%);
+    background: radial-gradient(circle at top, rgba(231, 181, 31, 0.2), transparent 60%);
   }
   .gold-divider {
-    background: linear-gradient(90deg, transparent, rgba(199, 168, 106, 0.6), transparent);
+    background: linear-gradient(90deg, transparent, rgba(231, 181, 31, 0.6), transparent);
+  }
+  .hover-lift {
+    cursor: pointer;
+    transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+  }
+  .hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 22px 40px rgba(28, 27, 25, 0.08);
+  }
+  .hover-gold:hover {
+    border-color: var(--gold-200);
+  }
+  .hover-glow:hover {
+    box-shadow: 0 18px 42px rgba(224, 185, 76, 0.18);
   }
   .reveal {
     opacity: 0;

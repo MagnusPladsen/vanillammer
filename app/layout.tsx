@@ -15,9 +15,12 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Vanillammer",
+  title: "Vanillammer | Luxury Renovation & Interior Design",
   description: "Luxury renovation and interior design studio in Lillehammer.",
   metadataBase: new URL("https://vanillammer.no"),
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({

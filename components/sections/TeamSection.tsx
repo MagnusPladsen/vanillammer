@@ -18,14 +18,10 @@ export function TeamSection() {
         {members.map((member) => (
           <Card
             key={member.name}
-            className="group card-lux cursor-pointer border-border/80 p-6 hover-lift hover-gold"
+            className="group card-lux cursor-pointer border-border/80 p-6 hover-lift hover-gold hover-glow"
           >
             <div className="flex h-36 items-center justify-center rounded-md bg-gradient-to-br from-cream-50 to-stone-200">
-              <svg
-                viewBox="0 0 64 64"
-                className="h-20 w-20 text-gold-500"
-                aria-hidden="true"
-              >
+              <svg viewBox="0 0 64 64" className="h-20 w-20 text-gold-500" aria-hidden="true">
                 <circle cx="32" cy="20" r="10" fill="currentColor" />
                 <path
                   d="M16 54c0-8.8 7.2-16 16-16s16 7.2 16 16"

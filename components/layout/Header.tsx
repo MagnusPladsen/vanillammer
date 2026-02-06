@@ -24,7 +24,7 @@ export function Header() {
   const locale = pathname.split("/")[1] || "no";
 
   return (
-    <header className="sticky top-0 z-40 w-full border-b border-border/60 bg-background/80 backdrop-blur">
+    <header className="sticky top-0 z-40 w-full border-b border-border/60 bg-cream-50/95 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <Link href={`/${locale}`} className="flex items-center gap-3 text-charcoal-900">
           <Logo className="h-10 w-auto" />

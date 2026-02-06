@@ -75,9 +75,8 @@
     "team": {
       "title": "Teamet",
       "members": [
-        { "name": "Emma Berg", "role": "Kreativ leder" },
-        { "name": "Lars Nystad", "role": "Fagansvarlig snekker" },
-        { "name": "Sofia Kvale", "role": "Prosjektleder" }
+        { "name": "Henrik Smerud", "role": "Allt-mulig-mann" },
+        { "name": "Tonje Helên Furudal", "role": "Ledende interiørarkitekt" }
       ]
     }
   },

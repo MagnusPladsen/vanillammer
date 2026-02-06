@@ -75,9 +75,8 @@
     "team": {
       "title": "The Team",
       "members": [
-        { "name": "Emma Berg", "role": "Creative Director" },
-        { "name": "Lars Nystad", "role": "Lead Carpenter" },
-        { "name": "Sofia Kvale", "role": "Project Manager" }
+        { "name": "Henrik Smerud", "role": "All-round craftsman" },
+        { "name": "Tonje Helên Furudal", "role": "Lead Interior Designer" }
       ]
     }
   },

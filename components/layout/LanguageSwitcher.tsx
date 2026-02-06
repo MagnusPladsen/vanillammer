@@ -20,7 +20,7 @@ export function LanguageSwitcher() {
   const current = pathname.split("/")[1] || "no";
 
   return (
-    <div className="flex items-center gap-2 rounded-full border border-gold-200 bg-white/80 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-charcoal-900">
+    <div className="flex items-center gap-2 rounded-full border border-gold-200 bg-cream-50/90 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-charcoal-900">
       {locales.map((locale) => (
         <Link
           key={locale}

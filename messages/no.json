@@ -1,0 +1,179 @@
+{
+  "site": {
+    "name": "Vanillammer",
+    "tagline": "Eksklusive oppussinger og skandinaviske interiører",
+    "description": "Vanillammer er et eksklusivt oppussings- og interiørstudio i Lillehammer, kjent for tidløs nordisk estetikk og presist håndverk."
+  },
+  "seo": {
+    "title": "Vanillammer | Eksklusiv oppussing i Lillehammer",
+    "description": "Eksklusiv oppussing, skreddersydd snekkerarbeid og skandinavisk interiørdesign i Lillehammer."
+  },
+  "nav": {
+    "home": "Hjem",
+    "about": "Om oss",
+    "services": "Tjenester",
+    "projects": "Prosjekter",
+    "contact": "Kontakt"
+  },
+  "cta": {
+    "quote": "Få pristilbud",
+    "contact": "Kontakt oss",
+    "viewServices": "Se tjenester",
+    "viewProjects": "Se prosjekter",
+    "learnMore": "Les mer",
+    "backHome": "Til forsiden"
+  },
+  "home": {
+    "hero": {
+      "title": "Rom skapt med presisjon og ro.",
+      "subtitle": "Vanillammer leverer sofistikerte oppussinger og interiører med tydelig skandinavisk signatur."
+    },
+    "intro": "Vi kombinerer håndverk av høyeste kvalitet med arkitektonisk klarhet for å skape hjem som varer.",
+    "services": {
+      "title": "Utvalgte tjenester",
+      "subtitle": "Helhetlige oppussinger og design, tilpasset kresne boligeiere."
+    },
+    "projects": {
+      "title": "Utvalgte prosjekter",
+      "subtitle": "Nylige transformasjoner i Lillehammer og omegn."
+    },
+    "instagram": {
+      "eyebrow": "Instagram",
+      "title": "Vårt siste arbeid",
+      "subtitle": "Følg med på prosessen og ferdige rom.",
+      "viewLink": "Se på Instagram"
+    },
+    "cta": {
+      "title": "Klar for å forvandle hjemmet ditt?",
+      "subtitle": "Del visjonen din, så lager vi et skreddersydd forslag."
+    }
+  },
+  "about": {
+    "title": "Om Vanillammer",
+    "story": {
+      "title": "Et nordisk studio forankret i Lillehammer",
+      "body": "Vanillammer bygger på troen om at oppussing skal føles rolig, gjennomtenkt og personlig. Fra tradisjonelle hytter til moderne rekkehus møter vi hvert prosjekt med arkitektonisk presisjon og designfokus.",
+      "body2": "Med base i Lillehammer henter vi inspirasjon fra fjellene, lyset og håndverkstradisjonene i regionen."
+    },
+    "values": {
+      "title": "Våre verdier",
+      "items": [
+        {
+          "title": "Kvalitet uten kompromiss",
+          "description": "Vi perfeksjonerer materialvalg og detaljer for et tidløst resultat."
+        },
+        {
+          "title": "Skandinavisk tilbakeholdenhet",
+          "description": "Vi skaper varme rom med enkelhet og balansert estetikk."
+        },
+        {
+          "title": "Håndverk",
+          "description": "Et team som kombinerer teknisk presisjon med ekte stolthet."
+        }
+      ]
+    },
+    "team": {
+      "title": "Teamet",
+      "members": [
+        { "name": "Emma Berg", "role": "Kreativ leder" },
+        { "name": "Lars Nystad", "role": "Fagansvarlig snekker" },
+        { "name": "Sofia Kvale", "role": "Prosjektleder" }
+      ]
+    }
+  },
+  "services": {
+    "title": "Tjenester",
+    "subtitle": "En komplett oppussingspartner fra idé til ferdig styling.",
+    "items": [
+      {
+        "id": "full-renovation",
+        "title": "Totalrenovering",
+        "description": "Helhetlige oppgraderinger som forbedrer planløsning, lys og flyt."
+      },
+      {
+        "id": "kitchen-bath",
+        "title": "Kjøkken og bad",
+        "description": "Nøyaktig planlegging og skreddersydde overflater for hjemmets viktigste rom."
+      },
+      {
+        "id": "interior-consult",
+        "title": "Interiørkonsultasjon",
+        "description": "Materialer, farger, belysning og layout – vi gir tydelige anbefalinger."
+      },
+      {
+        "id": "project-management",
+        "title": "Prosjektplanlegging",
+        "description": "Strukturert gjennomføring og tett oppfølging gjennom hele prosessen."
+      },
+      {
+        "id": "custom-carpentry",
+        "title": "Skreddersydd snekkerarbeid",
+        "description": "Innebygde løsninger og detaljer produsert etter mål."
+      },
+      {
+        "id": "exterior-renovation",
+        "title": "Fasade og eksteriør",
+        "description": "Raffinerte fasadeoppgraderinger med treverk og arkitektoniske detaljer."
+      }
+    ]
+  },
+  "projects": {
+    "title": "Prosjekter",
+    "subtitle": "Varme, minimalistiske rom formet av kvalitetsmaterialer og rolig geometri.",
+    "items": [
+      {
+        "id": "fjell-lodge",
+        "title": "Fjellhytte i ny drakt",
+        "location": "Nordseter, Lillehammer"
+      },
+      {
+        "id": "city-townhouse",
+        "title": "Moderne rekkehus",
+        "location": "Lillehammer"
+      },
+      {
+        "id": "lake-villa",
+        "title": "Villa ved elva",
+        "location": "Lågen"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Få pristilbud",
+    "subtitle": "Del noen detaljer om prosjektet, så tar vi kontakt med et forslag.",
+    "mapTitle": "Kart over Lillehammer",
+    "form": {
+      "name": { "label": "Navn", "placeholder": "Ditt fulle navn" },
+      "email": { "label": "E-post", "placeholder": "deg@epost.no" },
+      "phone": { "label": "Telefon", "placeholder": "+47 ..." },
+      "message": { "label": "Melding", "placeholder": "Fortell oss om prosjektet" },
+      "submit": "Send forespørsel",
+      "success": "Takk! Vi kontakter deg snart."
+    },
+    "details": {
+      "title": "Kontaktinformasjon",
+      "email": "post@vanillammer.no",
+      "phone": "+47 123 45 678",
+      "location": "Lillehammer, Norge"
+    }
+  },
+  "images": {
+    "heroAlt": "Eksklusivt skandinavisk interiør med varmt lys",
+    "projects": {
+      "fjell-lodge": "Varm stue med peis i skandinavisk stil",
+      "city-townhouse": "Minimalistisk kjøkken med tre og messing",
+      "lake-villa": "Soverom med myke nøytrale toner"
+    }
+  },
+  "footer": {
+    "tagline": "Eksklusiv oppussing og interiørdesign i Lillehammer.",
+    "copyright": "© 2026 Vanillammer. Alle rettigheter reservert."
+  },
+  "notFound": {
+    "title": "Siden finnes ikke",
+    "subtitle": "Lenken kan ha endret seg, eller siden er flyttet."
+  },
+  "accessibility": {
+    "close": "Lukk"
+  }
+}

@@ -34,13 +34,13 @@ export function Hero() {
           {t("home.hero.subtitle")}
         </p>
         <div className="flex flex-wrap items-center gap-4 reveal reveal-delay-4">
-          <Button asChild className="bg-gold-500 text-charcoal-900 hover:bg-gold-200 shadow-[0_12px_30px_rgba(255,232,2,0.3)]">
+          <Button asChild className="btn-gold">
             <Link href={`/${locale}/contact`}>{t("cta.quote")}</Link>
           </Button>
           <Button
             asChild
             variant="outline"
-            className="border-gold-200/80 bg-cream-50/95 text-charcoal-900 hover:bg-cream-50"
+            className="btn-gold-outline"
           >
             <Link href={`/${locale}/projects`}>{t("cta.viewProjects")}</Link>
           </Button>

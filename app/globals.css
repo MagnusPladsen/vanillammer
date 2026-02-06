@@ -40,30 +40,30 @@
 
 :root {
   --radius: 4px;
-  --background: #faf7f0;
+  --background: #f8f1e6;
   --foreground: #1c1b19;
   --card: #ffffff;
   --card-foreground: #1c1b19;
   --popover: #ffffff;
   --popover-foreground: #1c1b19;
-  --primary: #e0b94c;
-  --primary-foreground: #1a1714;
-  --secondary: #f6ecd0;
-  --secondary-foreground: #2a2622;
-  --muted: #efe2b7;
-  --muted-foreground: #6a625a;
-  --accent: #f9eec9;
-  --accent-foreground: #1f1c18;
+  --primary: #e7b51f;
+  --primary-foreground: #1c1b19;
+  --secondary: #efe4d2;
+  --secondary-foreground: #1c1b19;
+  --muted: #ead9b8;
+  --muted-foreground: #b9a48c;
+  --accent: #efe4d2;
+  --accent-foreground: #1c1b19;
   --destructive: #b34b4b;
-  --border: #e1d2a7;
-  --input: #e1d2a7;
-  --ring: #e0b94c;
+  --border: #d8c7af;
+  --input: #d8c7af;
+  --ring: #e7b51f;
 
   --gold-200: #e8cd61;
   --gold-500: #e7b51f;
-  --cream-50: #fbf2d6;
-  --stone-200: #eadfbe;
-  --stone-400: #b8aa86;
+  --cream-50: #efe4d2;
+  --stone-200: #d8c7af;
+  --stone-400: #b9a48c;
   --charcoal-900: #1c1b19;
   --bg-shift: 0px;
   --bg-shimmer: 0.35;
@@ -87,8 +87,8 @@
     inset: 0;
     pointer-events: none;
     background-image:
-      radial-gradient(circle at 20% 20%, rgba(224, 185, 76, 0.16), transparent 52%),
-      radial-gradient(circle at 80% 0%, rgba(251, 242, 214, 0.7), transparent 46%),
+      radial-gradient(circle at 20% 20%, rgba(216, 181, 107, 0.18), transparent 52%),
+      radial-gradient(circle at 80% 0%, rgba(248, 241, 230, 0.8), transparent 46%),
       linear-gradient(180deg, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0));
     opacity: 0.7;
     z-index: -1;
@@ -101,8 +101,8 @@
     inset: 0;
     pointer-events: none;
     background-image:
-      radial-gradient(circle at 15% 25%, rgba(231, 181, 31, var(--bg-shimmer)), transparent 35%),
-      radial-gradient(circle at 85% 70%, rgba(232, 205, 97, 0.25), transparent 40%),
+      radial-gradient(circle at 15% 25%, rgba(216, 181, 107, var(--bg-shimmer)), transparent 35%),
+      radial-gradient(circle at 85% 70%, rgba(234, 217, 184, 0.25), transparent 40%),
       repeating-linear-gradient(
         120deg,
         rgba(255, 255, 255, 0.08),
@@ -139,10 +139,10 @@
     text-wrap: balance;
   }
   .bg-glow {
-    background: radial-gradient(circle at top, rgba(231, 181, 31, 0.2), transparent 60%);
+    background: radial-gradient(circle at top, rgba(231, 181, 31, 0.22), transparent 60%);
   }
   .gold-divider {
-    background: linear-gradient(90deg, transparent, rgba(231, 181, 31, 0.6), transparent);
+    background: linear-gradient(90deg, transparent, rgba(231, 181, 31, 0.65), transparent);
   }
   .hover-lift {
     cursor: pointer;
@@ -155,8 +155,11 @@
   .hover-gold:hover {
     border-color: var(--gold-200);
   }
+  .hover-gold-text:hover {
+    color: var(--gold-500);
+  }
   .hover-glow:hover {
-    box-shadow: 0 18px 42px rgba(224, 185, 76, 0.18);
+    box-shadow: 0 18px 42px rgba(231, 181, 31, 0.18);
   }
   .reveal {
     opacity: 0;
@@ -174,6 +177,115 @@
   }
   .reveal-delay-4 {
     animation-delay: 0.4s;
+  }
+  .card-lux {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(255, 255, 255, 0.86));
+    box-shadow: 0 12px 24px rgba(28, 27, 25, 0.05);
+  }
+  .card-lux::before,
+  .card-lux::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    border-radius: inherit;
+  }
+  .card-lux::before {
+    background:
+      linear-gradient(90deg, rgba(231, 181, 31, 0.85), rgba(231, 181, 31, 0.85)) top left / 0% 2px no-repeat,
+      linear-gradient(90deg, rgba(231, 181, 31, 0.85), rgba(231, 181, 31, 0.85)) bottom right / 0% 2px no-repeat,
+      linear-gradient(0deg, rgba(231, 181, 31, 0.85), rgba(231, 181, 31, 0.85)) top right / 2px 0% no-repeat,
+      linear-gradient(0deg, rgba(231, 181, 31, 0.85), rgba(231, 181, 31, 0.85)) bottom left / 2px 0% no-repeat;
+    transition: background-size 0.55s ease;
+    opacity: 0.9;
+  }
+  .card-lux::after {
+    background: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0) 20%,
+      rgba(231, 181, 31, 0.35) 50%,
+      rgba(255, 255, 255, 0) 80%
+    );
+    transform: translateX(-120%);
+    opacity: 0;
+    transition: transform 0.7s ease, opacity 0.5s ease;
+  }
+  .card-lux:hover {
+    box-shadow: 0 24px 42px rgba(231, 181, 31, 0.14);
+  }
+  .card-lux:hover::before {
+    background-size: 100% 2px, 100% 2px, 2px 100%, 2px 100%;
+  }
+  .card-lux:hover::after {
+    transform: translateX(120%);
+    opacity: 1;
+  }
+  .card-static {
+    cursor: default;
+  }
+  .card-static:hover::before,
+  .card-static:hover::after {
+    background-size: 0% 2px, 0% 2px, 2px 0%, 2px 0%;
+    opacity: 0;
+  }
+  .card-static:hover {
+    box-shadow: 0 12px 24px rgba(28, 27, 25, 0.05);
+  }
+  
+  .btn-gold {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #e7b51f, #f0d17a);
+    color: #1c1b19;
+    box-shadow: 0 14px 30px rgba(231, 181, 31, 0.28);
+  }
+  .btn-gold::after {
+    content: "";
+    position: absolute;
+    inset: -20% 0;
+    background: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0) 20%,
+      rgba(255, 255, 255, 0.5) 50%,
+      rgba(255, 255, 255, 0) 80%
+    );
+    transform: translateX(-130%);
+    transition: transform 0.7s ease;
+  }
+  .btn-gold:hover {
+    filter: brightness(1.02);
+  }
+  .btn-gold:hover::after {
+    transform: translateX(130%);
+  }
+  .btn-gold-outline {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(231, 181, 31, 0.6);
+    background: rgba(255, 255, 255, 0.85);
+    color: #1c1b19;
+    box-shadow: 0 8px 20px rgba(231, 181, 31, 0.12);
+  }
+  .btn-gold-outline::after {
+    content: "";
+    position: absolute;
+    inset: -20% 0;
+    background: linear-gradient(
+      120deg,
+      rgba(231, 181, 31, 0) 20%,
+      rgba(231, 181, 31, 0.25) 50%,
+      rgba(231, 181, 31, 0) 80%
+    );
+    transform: translateX(-130%);
+    transition: transform 0.7s ease;
+  }
+  .btn-gold-outline:hover {
+    background: rgba(255, 255, 255, 0.98);
+  }
+  .btn-gold-outline:hover::after {
+    transform: translateX(130%);
   }
 }
 

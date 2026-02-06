@@ -1,0 +1,179 @@
+{
+  "site": {
+    "name": "Vanillammer",
+    "tagline": "Luxury renovation and Scandinavian interiors",
+    "description": "Vanillammer is a high-end renovation and interior design studio in Lillehammer, crafting timeless Nordic spaces with meticulous craftsmanship."
+  },
+  "seo": {
+    "title": "Vanillammer | Luxury Renovation in Lillehammer",
+    "description": "Luxury renovation, bespoke carpentry, and Scandinavian interior design in Lillehammer."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "cta": {
+    "quote": "Get a Quote",
+    "contact": "Contact Us",
+    "viewServices": "View Services",
+    "viewProjects": "View Projects",
+    "learnMore": "Learn More",
+    "backHome": "Back to Home"
+  },
+  "home": {
+    "hero": {
+      "title": "Crafted spaces, refined to the last detail.",
+      "subtitle": "Vanillammer creates sophisticated renovations and interiors that feel calm, luminous, and unmistakably Scandinavian."
+    },
+    "intro": "We combine meticulous craftsmanship with architectural clarity to shape homes that feel both luxurious and lived-in.",
+    "services": {
+      "title": "Signature Services",
+      "subtitle": "Comprehensive renovation and design expertise, tailored for discerning homeowners."
+    },
+    "projects": {
+      "title": "Featured Projects",
+      "subtitle": "A selection of recent transformations across Lillehammer and the surrounding region."
+    },
+    "instagram": {
+      "eyebrow": "Instagram",
+      "title": "Our Latest Work",
+      "subtitle": "Follow along for behind-the-scenes details and completed spaces.",
+      "viewLink": "View on Instagram"
+    },
+    "cta": {
+      "title": "Ready to transform your home?",
+      "subtitle": "Tell us about your vision and we will craft a tailored proposal."
+    }
+  },
+  "about": {
+    "title": "About Vanillammer",
+    "story": {
+      "title": "A Nordic studio rooted in Lillehammer",
+      "body": "Vanillammer is built on the belief that renovation should feel calm, intentional, and deeply personal. From heritage cabins to modern townhouses, we approach every project with architectural rigor and a designer's eye.",
+      "body2": "Based in Lillehammer, we draw inspiration from the surrounding mountains, the clarity of Scandinavian light, and the tradition of honest craftsmanship."
+    },
+    "values": {
+      "title": "Values",
+      "items": [
+        {
+          "title": "Quality without compromise",
+          "description": "We obsess over joinery, materials, and finish to deliver timeless quality."
+        },
+        {
+          "title": "Scandinavian restraint",
+          "description": "We balance simplicity with warmth, creating spaces that breathe."
+        },
+        {
+          "title": "Craftsmanship",
+          "description": "Our team brings technical precision and artisan attention to every detail."
+        }
+      ]
+    },
+    "team": {
+      "title": "The Team",
+      "members": [
+        { "name": "Emma Berg", "role": "Creative Director" },
+        { "name": "Lars Nystad", "role": "Lead Carpenter" },
+        { "name": "Sofia Kvale", "role": "Project Manager" }
+      ]
+    }
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "A full-service renovation partner, from initial concept to final styling.",
+    "items": [
+      {
+        "id": "full-renovation",
+        "title": "Full House Renovation",
+        "description": "Complete transformations that align architecture, light, and flow with your lifestyle."
+      },
+      {
+        "id": "kitchen-bath",
+        "title": "Kitchen & Bathroom Remodeling",
+        "description": "Precise planning and bespoke finishes for the most-used rooms in your home."
+      },
+      {
+        "id": "interior-consult",
+        "title": "Interior Design Consultation",
+        "description": "Material palettes, lighting, and layout guidance for confident decisions."
+      },
+      {
+        "id": "project-management",
+        "title": "Project Planning & Management",
+        "description": "A structured, transparent process to keep quality and timelines aligned."
+      },
+      {
+        "id": "custom-carpentry",
+        "title": "Custom Carpentry & Built-ins",
+        "description": "Tailor-made storage, shelving, and architectural details crafted in-house."
+      },
+      {
+        "id": "exterior-renovation",
+        "title": "Exterior & Facade Renovation",
+        "description": "Enhance curb appeal with refined woodwork, cladding, and detailing."
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Spaces defined by warm minimalism, clean geometry, and premium materials.",
+    "items": [
+      {
+        "id": "fjell-lodge",
+        "title": "Fjell Lodge Retreat",
+        "location": "Nordseter, Lillehammer"
+      },
+      {
+        "id": "city-townhouse",
+        "title": "Modern Townhouse Renewal",
+        "location": "Lillehammer"
+      },
+      {
+        "id": "lake-villa",
+        "title": "Lakeside Villa",
+        "location": "Lågen River"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Get a Quote",
+    "subtitle": "Share a few details and we will follow up with a tailored proposal.",
+    "mapTitle": "Map of Lillehammer",
+    "form": {
+      "name": { "label": "Name", "placeholder": "Your full name" },
+      "email": { "label": "Email", "placeholder": "you@email.com" },
+      "phone": { "label": "Phone", "placeholder": "+47 ..." },
+      "message": { "label": "Message", "placeholder": "Tell us about your project" },
+      "submit": "Send request",
+      "success": "Thank you! We'll be in touch soon."
+    },
+    "details": {
+      "title": "Contact Details",
+      "email": "post@vanillammer.no",
+      "phone": "+47 123 45 678",
+      "location": "Lillehammer, Norway"
+    }
+  },
+  "images": {
+    "heroAlt": "Luxury Scandinavian interior with warm lighting",
+    "projects": {
+      "fjell-lodge": "Warm Scandinavian living room with fireplace",
+      "city-townhouse": "Minimalist kitchen with wood and brass accents",
+      "lake-villa": "Luxury bedroom with soft neutral palette"
+    }
+  },
+  "footer": {
+    "tagline": "Luxury renovation and interior design in Lillehammer.",
+    "copyright": "© 2026 Vanillammer. All rights reserved."
+  },
+  "notFound": {
+    "title": "This page could not be found",
+    "subtitle": "The link may have changed, or the page has moved."
+  },
+  "accessibility": {
+    "close": "Close"
+  }
+}
